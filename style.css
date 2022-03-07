@@ -177,6 +177,8 @@ button:hover {
     text-align: center;
 }
 
+
+/* reponsive part of program */
 @media only screen and (max-width:700px){
     nav ul{
         width: 100%;
@@ -206,7 +208,33 @@ button:hover {
     }
 
     .row{
-        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+
+    .col-2{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+
+    .col-2 .controller{
+        width: 77%;
+    }
+
+    .color-box{
+        transform: translateX(75px);
+    }
+
+    .col-1{
+        flex-basis: 100%;
+    }
+
+    .col-1 h2{
+        font-size: 35px;
+    }
+
+    .col-1 h3{
+        font-size: 15px;
     }
 
 }
